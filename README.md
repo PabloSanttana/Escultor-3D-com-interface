@@ -16,14 +16,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ## Informação do projeto
 O projeto consiste em manipulações de matrizes tridimensionais possuem dimensões de largura, altura e largura especificadas pelo usuário, onde os índices dos elementos nessa matriz coresponderiam às posições dos voxels que é é definido como um struct no espaço discreto.
 
-#### Tabela referente as posições 
-
-![tabela](https://github.com/PabloSanttana/Projeto-Escultor-3D-1.0/blob/master/images/tabelaExemplo.png)
-
-##### Resultado da tabela anterior 
-
-![Cupo](https://github.com/PabloSanttana/Projeto-Escultor-3D-1.0/blob/master/images/Cubo.png)
-
 <h3 align="center">
     Exemplos de Esculturas
 </h3>
@@ -35,10 +27,6 @@ O projeto consiste em manipulações de matrizes tridimensionais possuem dimens�
 #### Bob Esponja
 
 ![bobEsponja](https://github.com/PabloSanttana/Projeto-Escultor-3D-1.0/blob/master/images/bobEsponja.png)
-
-### Melancia
-
-![melancia](https://github.com/PabloSanttana/Projeto-Escultor-3D-1.0/blob/master/images/melacia.png)
 
 ### Documentação do projeto 
  
