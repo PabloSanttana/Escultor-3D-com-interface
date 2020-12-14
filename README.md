@@ -56,43 +56,45 @@ $ git clone <https://github.com/PabloSanttana/Escultor-3D-com-interface.git>
     
  ### Guia da interface
  
- ![menu](https://github.com/PabloSanttana/Escultor-3D-com-interface/blob/master/images/menu.png)
+
+  <img width="70%"  src="https://github.com/PabloSanttana/Escultor-3D-com-interface/blob/master/images/menu.png"/>
  
  Menu para selecionar os método que dessejar
  
- ![esfera](https://github.com/PabloSanttana/Escultor-3D-com-interface/blob/master/images/Raio%20da%20esfera.png)
+  <img width="70%"  src="https://github.com/PabloSanttana/Escultor-3D-com-interface/blob/master/images/Raio%20da%20esfera.png"/>
+ 
  
  Aqui você escolhe o raio da esfera
- 
- ![elipsoid](https://github.com/PabloSanttana/Escultor-3D-com-interface/blob/master/images/Elipse.png)
+
+ <img width="70%"  src="https://github.com/PabloSanttana/Escultor-3D-com-interface/blob/master/images/Elipse.png"/>
  
  Aqui você escolhe os raios do elepsoid
  
- ![caixa](https://github.com/PabloSanttana/Escultor-3D-com-interface/blob/master/images/caixa.png)
+ <img width="70%"  src="https://github.com/PabloSanttana/Escultor-3D-com-interface/blob/master/images/caixa.png"/>
  
   Aqui você escolhe as dimensões da caixa
   
- ![cores](https://github.com/PabloSanttana/Escultor-3D-com-interface/blob/master/images/cores.png)
+  <img width="70%"  src="https://github.com/PabloSanttana/Escultor-3D-com-interface/blob/master/images/cores.png"/>
  
   Aqui você escolhe as cores
   
- ![eixo z](https://github.com/PabloSanttana/Escultor-3D-com-interface/blob/master/images/eixo%20z.png)
+  <img width="70%"  src="https://github.com/PabloSanttana/Escultor-3D-com-interface/blob/master/images/eixo%20z.png"/>
  
   Aqui você escolhe a profundidade do eixo z
   
-  ![cood](https://github.com/PabloSanttana/Escultor-3D-com-interface/blob/master/images/orienta%C3%A7%C3%A3o.png)
+  <img width="70%"  src="https://github.com/PabloSanttana/Escultor-3D-com-interface/blob/master/images/orienta%C3%A7%C3%A3o.png"/>
   
   Orientação da matriz
   
-  ![posição](https://github.com/PabloSanttana/Escultor-3D-com-interface/blob/master/images/posi%C3%A7%C3%A3o%20dor%20curso.png)
+  <img width="70%"  src="https://github.com/PabloSanttana/Escultor-3D-com-interface/blob/master/images/posi%C3%A7%C3%A3o%20dor%20curso.png"/>
   
   Posição do curso em cima da matriz
   
-  ![informação](https://github.com/PabloSanttana/Escultor-3D-com-interface/blob/master/images/matriz.png)
+  <img width="70%"  src="https://github.com/PabloSanttana/Escultor-3D-com-interface/blob/master/images/matriz.png"/>
   
   Informação sobre a matriz atual
   
-  ![new](https://github.com/PabloSanttana/Escultor-3D-com-interface/blob/master/images/new.png)
+  <img width="70%"  src="https://github.com/PabloSanttana/Escultor-3D-com-interface/blob/master/images/new.png"/>
   
   Ao clicar em File novo abre esta janela para colocar a nova matriz
  
