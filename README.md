@@ -42,7 +42,7 @@ O projeto consiste em manipulações de matrizes tridimensionais possuem dimens�
 
 ### Documentação do projeto 
  
- [Documentação](https://pablosanttana.github.io/Projeto-Escultor-3D-1.0/documenta%C3%A7%C3%A3o/html/)
+ [Documentação](https://pablosanttana.github.io/Escultor-3D-com-interface/html/annotated.html)
  
  
 ### Pré-requisitos
