@@ -1,0 +1,2139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>998</width>
+    <height>670</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(231, 231, 231);
+color: rgb(0, 0, 0);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_5" stretch="0,70,0">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_9">
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>Salvar</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonPutVoxel">
+        <property name="styleSheet">
+         <string notr="true">qproperty-icon:url(:/icons/incos/putvoxel.jpg)</string>
+        </property>
+        <property name="text">
+         <string>PutVoxel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonCutVoxel">
+        <property name="styleSheet">
+         <string notr="true">qproperty-icon:url(:/icons/incos/CutVoxel.png);</string>
+        </property>
+        <property name="text">
+         <string>CutVoxel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonPutBox">
+        <property name="styleSheet">
+         <string notr="true">qproperty-icon:url(:/icons/incos/putBoXX.png);</string>
+        </property>
+        <property name="text">
+         <string>PutBox</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonCutBox">
+        <property name="styleSheet">
+         <string notr="true">qproperty-icon:url(:/icons/incos/cutBox.jpg);</string>
+        </property>
+        <property name="text">
+         <string>CutBox</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonPutSphere">
+        <property name="styleSheet">
+         <string notr="true">qproperty-icon:url(:/icons/incos/PutEsfera.png);</string>
+        </property>
+        <property name="text">
+         <string>PutSphere</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonCutSphere">
+        <property name="styleSheet">
+         <string notr="true">qproperty-icon:url(:/icons/incos/CutEsfera.png);</string>
+        </property>
+        <property name="text">
+         <string>CutSphere</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonPutEllipsoid">
+        <property name="styleSheet">
+         <string notr="true">qproperty-icon:url(:/icons/incos/PutElipse.png);</string>
+        </property>
+        <property name="text">
+         <string>PutEllipsoid</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonCutEllipsoid">
+        <property name="styleSheet">
+         <string notr="true">qproperty-icon:url(:/icons/incos/CutElipse.png);</string>
+        </property>
+        <property name="text">
+         <string>CutEllipsoid</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_19" stretch="7,60,28">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_4" stretch="0,0,0">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_11">
+          <item>
+           <widget class="QFrame" name="frame_6">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:5px;</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_3">
+             <item row="0" column="0">
+              <layout class="QVBoxLayout" name="verticalLayout_2">
+               <item>
+                <widget class="QLabel" name="label_3">
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(0, 0, 0);</string>
+                 </property>
+                 <property name="text">
+                  <string>Dimensão da matriz </string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout" stretch="50,50">
+                 <item>
+                  <widget class="QLabel" name="label_2">
+                   <property name="font">
+                    <font>
+                     <pointsize>11</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>x</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLCDNumber" name="lcdNumberX">
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(0, 0, 0);
+boder:none;</string>
+                   </property>
+                   <property name="segmentStyle">
+                    <enum>QLCDNumber::Flat</enum>
+                   </property>
+                   <property name="value" stdset="0">
+                    <double>10.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_10" stretch="50,50">
+                 <item>
+                  <widget class="QLabel" name="label_5">
+                   <property name="font">
+                    <font>
+                     <pointsize>11</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Y</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLCDNumber" name="lcdNumberY">
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(0, 0, 0);</string>
+                   </property>
+                   <property name="segmentStyle">
+                    <enum>QLCDNumber::Flat</enum>
+                   </property>
+                   <property name="value" stdset="0">
+                    <double>10.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_11" stretch="50,50">
+                 <item>
+                  <widget class="QLabel" name="label_6">
+                   <property name="font">
+                    <font>
+                     <pointsize>11</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Z</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLCDNumber" name="lcdNumberZ">
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(0, 0, 0);</string>
+                   </property>
+                   <property name="segmentStyle">
+                    <enum>QLCDNumber::Flat</enum>
+                   </property>
+                   <property name="value" stdset="0">
+                    <double>10.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame_7">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:5px;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_4">
+           <item row="0" column="0">
+            <layout class="QHBoxLayout" name="horizontalLayout_26">
+             <item>
+              <spacer name="horizontalSpacer_9">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_17">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(0, 0, 0);</string>
+               </property>
+               <property name="text">
+                <string>Posição do cursor</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_10">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item row="1" column="0">
+            <layout class="QHBoxLayout" name="horizontalLayout_23" stretch="50,50">
+             <item>
+              <widget class="QLabel" name="label_18">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Eixo X</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLCDNumber" name="lcdNumberCursorX">
+               <property name="styleSheet">
+                <string notr="true">color: rgb(0, 0, 0);
+boder:none;</string>
+               </property>
+               <property name="segmentStyle">
+                <enum>QLCDNumber::Flat</enum>
+               </property>
+               <property name="value" stdset="0">
+                <double>0.000000000000000</double>
+               </property>
+               <property name="intValue" stdset="0">
+                <number>0</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="2" column="0">
+            <layout class="QHBoxLayout" name="horizontalLayout_24" stretch="50,50">
+             <item>
+              <widget class="QLabel" name="label_19">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Eixo Y</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLCDNumber" name="lcdNumberCursorY">
+               <property name="styleSheet">
+                <string notr="true">color: rgb(0, 0, 0);</string>
+               </property>
+               <property name="segmentStyle">
+                <enum>QLCDNumber::Flat</enum>
+               </property>
+               <property name="value" stdset="0">
+                <double>0.000000000000000</double>
+               </property>
+               <property name="intValue" stdset="0">
+                <number>0</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="3" column="0">
+            <layout class="QHBoxLayout" name="horizontalLayout_25" stretch="50,50">
+             <item>
+              <widget class="QLabel" name="label_20">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Eixo Z</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLCDNumber" name="lcdNumberCursorZ">
+               <property name="styleSheet">
+                <string notr="true">color: rgb(0, 0, 0);</string>
+               </property>
+               <property name="segmentStyle">
+                <enum>QLCDNumber::Flat</enum>
+               </property>
+               <property name="value" stdset="0">
+                <double>0.000000000000000</double>
+               </property>
+               <property name="intValue" stdset="0">
+                <number>0</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout" stretch="0">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_6" stretch="0,0">
+            <item>
+             <widget class="QLabel" name="labelTextIcon">
+              <property name="font">
+               <font>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>text</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="labelIncos">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:5px;
+padding:5px;</string>
+              </property>
+              <property name="text">
+               <string>incos</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="Plotter" name="containerMatriz" native="true">
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(255, 255, 255);</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QFrame" name="frame_3">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:5px;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_7">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_20">
+             <item>
+              <spacer name="horizontalSpacer_4">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_7">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Esfera</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_12" stretch="10,85,5">
+             <item>
+              <widget class="QLabel" name="label_8">
+               <property name="text">
+                <string>Raio</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSlider" name="horizontalSliderRaioEsfera">
+               <property name="styleSheet">
+                <string notr="true">QSlider::groove:horizontal { 
+	background-color: rgb(172, 172, 172);
+	height: 4px; 
+	border-radius: 2px;
+}
+
+QSlider::handle:horizontal { 
+	background-color: gray; 
+	border: 2px solid gray; 
+	width: 5px; 
+	height: 5px; 
+	margin-top: -3px; 
+	margin-bottom: -3px; 
+	border-radius: 4px; 
+}
+</string>
+               </property>
+               <property name="minimum">
+                <number>1</number>
+               </property>
+               <property name="value">
+                <number>1</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLCDNumber" name="lcdNumber">
+               <property name="digitCount">
+                <number>5</number>
+               </property>
+               <property name="segmentStyle">
+                <enum>QLCDNumber::Flat</enum>
+               </property>
+               <property name="value" stdset="0">
+                <double>1.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame_4">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:5px;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_8">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_21">
+             <item>
+              <spacer name="horizontalSpacer_6">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_9">
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Elipsoide</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_5">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_13" stretch="10,80,10">
+             <item>
+              <widget class="QLabel" name="label_10">
+               <property name="text">
+                <string>RX</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSlider" name="horizontalSliderRXElipse">
+               <property name="styleSheet">
+                <string notr="true">QSlider::groove:horizontal { 
+	background-color: rgb(172, 172, 172);
+	height: 4px; 
+	border-radius: 2px;
+}
+
+QSlider::handle:horizontal { 
+	background-color: gray; 
+	border: 2px solid gray; 
+	width: 5px; 
+	height: 5px; 
+	margin-top: -3px; 
+	margin-bottom: -3px; 
+	border-radius: 4px; 
+}
+</string>
+               </property>
+               <property name="minimum">
+                <number>1</number>
+               </property>
+               <property name="value">
+                <number>1</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLCDNumber" name="lcdNumber_2">
+               <property name="font">
+                <font>
+                 <pointsize>8</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(0, 0, 0);</string>
+               </property>
+               <property name="segmentStyle">
+                <enum>QLCDNumber::Flat</enum>
+               </property>
+               <property name="value" stdset="0">
+                <double>1.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_14" stretch="10,80,10">
+             <item>
+              <widget class="QLabel" name="label_11">
+               <property name="text">
+                <string>RY</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSlider" name="horizontalSliderRYElipse">
+               <property name="styleSheet">
+                <string notr="true">QSlider::groove:horizontal { 
+	background-color: rgb(172, 172, 172);
+	height: 4px; 
+	border-radius: 2px;
+}
+
+QSlider::handle:horizontal { 
+	background-color: gray; 
+	border: 2px solid gray; 
+	width: 5px; 
+	height: 5px; 
+	margin-top: -3px; 
+	margin-bottom: -3px; 
+	border-radius: 4px; 
+}
+</string>
+               </property>
+               <property name="minimum">
+                <number>1</number>
+               </property>
+               <property name="value">
+                <number>1</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLCDNumber" name="lcdNumber_3">
+               <property name="styleSheet">
+                <string notr="true">color: rgb(0, 0, 0);</string>
+               </property>
+               <property name="segmentStyle">
+                <enum>QLCDNumber::Flat</enum>
+               </property>
+               <property name="value" stdset="0">
+                <double>1.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_15" stretch="10,80,10">
+             <item>
+              <widget class="QLabel" name="label_12">
+               <property name="text">
+                <string>RZ</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSlider" name="horizontalSliderRZElipse">
+               <property name="styleSheet">
+                <string notr="true">QSlider::groove:horizontal { 
+	background-color: rgb(172, 172, 172);
+	height: 4px; 
+	border-radius: 2px;
+}
+
+QSlider::handle:horizontal { 
+	background-color: gray; 
+	border: 2px solid gray; 
+	width: 5px; 
+	height: 5px; 
+	margin-top: -3px; 
+	margin-bottom: -3px; 
+	border-radius: 4px; 
+}
+</string>
+               </property>
+               <property name="minimum">
+                <number>1</number>
+               </property>
+               <property name="value">
+                <number>1</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLCDNumber" name="lcdNumber_4">
+               <property name="styleSheet">
+                <string notr="true">color: rgb(0, 0, 0);</string>
+               </property>
+               <property name="segmentStyle">
+                <enum>QLCDNumber::Flat</enum>
+               </property>
+               <property name="value" stdset="0">
+                <double>1.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame_5">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:5px;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_9">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_22">
+             <item>
+              <spacer name="horizontalSpacer_8">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_16">
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>caixa</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_7">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_16" stretch="10,80,10">
+             <item>
+              <widget class="QLabel" name="label_13">
+               <property name="text">
+                <string>DX</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSlider" name="horizontalSliderDXCubo">
+               <property name="styleSheet">
+                <string notr="true">QSlider::groove:horizontal { 
+	background-color: rgb(172, 172, 172);
+	height: 4px; 
+	border-radius: 2px;
+}
+
+QSlider::handle:horizontal { 
+	background-color: gray; 
+	border: 2px solid gray; 
+	width: 5px; 
+	height: 5px; 
+	margin-top: -3px; 
+	margin-bottom: -3px; 
+	border-radius: 4px; 
+}
+</string>
+               </property>
+               <property name="minimum">
+                <number>1</number>
+               </property>
+               <property name="value">
+                <number>1</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLCDNumber" name="lcdNumber_5">
+               <property name="styleSheet">
+                <string notr="true">color: rgb(0, 0, 0);</string>
+               </property>
+               <property name="segmentStyle">
+                <enum>QLCDNumber::Flat</enum>
+               </property>
+               <property name="value" stdset="0">
+                <double>1.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_17" stretch="10,80,10">
+             <item>
+              <widget class="QLabel" name="label_14">
+               <property name="text">
+                <string>DY</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSlider" name="horizontalSliderDYCubo">
+               <property name="styleSheet">
+                <string notr="true">QSlider::groove:horizontal { 
+	background-color: rgb(172, 172, 172);
+	height: 4px; 
+	border-radius: 2px;
+}
+
+QSlider::handle:horizontal { 
+	background-color: gray; 
+	border: 2px solid gray; 
+	width: 5px; 
+	height: 5px; 
+	margin-top: -3px; 
+	margin-bottom: -3px; 
+	border-radius: 4px; 
+}
+</string>
+               </property>
+               <property name="minimum">
+                <number>1</number>
+               </property>
+               <property name="value">
+                <number>1</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLCDNumber" name="lcdNumber_6">
+               <property name="styleSheet">
+                <string notr="true">color: rgb(0, 0, 0);</string>
+               </property>
+               <property name="digitCount">
+                <number>5</number>
+               </property>
+               <property name="segmentStyle">
+                <enum>QLCDNumber::Flat</enum>
+               </property>
+               <property name="value" stdset="0">
+                <double>1.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_18" stretch="10,80,10">
+             <item>
+              <widget class="QLabel" name="label_15">
+               <property name="text">
+                <string>DZ</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSlider" name="horizontalSliderDZCubo">
+               <property name="styleSheet">
+                <string notr="true">QSlider::groove:horizontal { 
+	background-color: rgb(172, 172, 172);
+	height: 4px; 
+	border-radius: 2px;
+}
+
+QSlider::handle:horizontal { 
+	background-color: gray; 
+	border: 2px solid gray; 
+	width: 5px; 
+	height: 5px; 
+	margin-top: -3px; 
+	margin-bottom: -3px; 
+	border-radius: 4px; 
+}
+</string>
+               </property>
+               <property name="minimum">
+                <number>1</number>
+               </property>
+               <property name="value">
+                <number>1</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLCDNumber" name="lcdNumber_7">
+               <property name="styleSheet">
+                <string notr="true">color: rgb(0, 0, 0);</string>
+               </property>
+               <property name="segmentStyle">
+                <enum>QLCDNumber::Flat</enum>
+               </property>
+               <property name="value" stdset="0">
+                <double>1.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_8" stretch="0,0,0">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_10" stretch="0">
+        <item>
+         <widget class="QLabel" name="labelLayoutIcon">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:5px;
+padding:5px;</string>
+          </property>
+          <property name="text">
+           <string>Layout</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_2">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:5px;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2" rowstretch="70,70,0">
+         <item row="1" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_7" stretch="80,0">
+           <item>
+            <widget class="QSlider" name="horizontalSliderProfundidade">
+             <property name="styleSheet">
+              <string notr="true">
+QSlider::groove:horizontal {
+border: 1px solid #bbb;
+background: white;
+height: 7px;
+border-radius: 4px;
+}
+
+QSlider::sub-page:horizontal {
+background: qlineargradient(x1: 0, y1: 0,    x2: 0, y2: 1,
+    stop: 0 #66e, stop: 1 #bbf);
+background: qlineargradient(x1: 0, y1: 0.2, x2: 1, y2: 1,
+    stop: 0 #bbf, stop: 1 #55f);
+border: 1px solid #777;
+height: 7px;
+border-radius: 4px;
+}
+
+QSlider::add-page:horizontal {
+background: #fff;
+border: 1px solid #777;
+height: 7px;
+border-radius: 4px;
+}
+
+QSlider::handle:horizontal {
+background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+    stop:0 #eee, stop:1 #ccc);
+border: 1px solid #777;
+width: 13px;
+margin-top: -2px;
+margin-bottom: -2px;
+border-radius: 4px;
+}
+
+QSlider::handle:horizontal:hover {
+background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+    stop:0 #fff, stop:1 #ddd);
+border: 1px solid #444;
+border-radius: 4px;
+}
+
+QSlider::sub-page:horizontal:disabled {
+background: #bbb;
+border-color: #999;
+}
+
+QSlider::add-page:horizontal:disabled {
+background: #eee;
+border-color: #999;
+}
+
+QSlider::handle:horizontal:disabled {
+background: #eee;
+border: 1px solid #aaa;
+border-radius: 4px;
+}</string>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLCDNumber" name="lcdNumberProfundidade">
+             <property name="styleSheet">
+              <string notr="true">color: rgb(0, 0, 0);</string>
+             </property>
+             <property name="segmentStyle">
+              <enum>QLCDNumber::Flat</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_4">
+           <property name="font">
+            <font>
+             <pointsize>15</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(0, 0, 0);
+box-shadow: 5px 10px #888888;</string>
+           </property>
+           <property name="text">
+            <string>Profundidade no eixo Z</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:5px;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="font">
+              <font>
+               <pointsize>13</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(0, 0, 0);</string>
+             </property>
+             <property name="text">
+              <string>cores</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_3">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item row="1" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="30,70">
+           <item>
+            <widget class="SelectedColors" name="widget" native="true">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(170, 255, 127);
+border-radius:5px;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="groupSliderColors">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="90,10">
+               <item>
+                <widget class="QSlider" name="horizontalSlider">
+                 <property name="styleSheet">
+                  <string notr="true">QSlider::groove:horizontal { 
+	background-color: rgb(172, 172, 172);
+	height: 4px; 
+	border-radius: 2px;
+}
+
+QSlider::handle:horizontal { 
+	background-color: red; 
+	border: 2px solid red; 
+	width: 5px; 
+	height: 5px; 
+	margin-top: -3px; 
+	margin-bottom: -3px; 
+	border-radius: 4px; 
+}
+
+</string>
+                 </property>
+                 <property name="maximum">
+                  <number>255</number>
+                 </property>
+                 <property name="value">
+                  <number>0</number>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLCDNumber" name="lcdNumberRed">
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(0, 0, 0);</string>
+                 </property>
+                 <property name="segmentStyle">
+                  <enum>QLCDNumber::Flat</enum>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="90,10">
+               <item>
+                <widget class="QSlider" name="horizontalSlider_2">
+                 <property name="styleSheet">
+                  <string notr="true">QSlider::groove:horizontal { 
+	background-color: rgb(172, 172, 172);
+	height: 4px; 
+	border-radius: 2px;
+}
+
+QSlider::handle:horizontal { 
+	background-color: rgb(0, 255, 0); 
+	border: 2px solid rgb(0, 255, 0) ; 
+	width: 5px; 
+	height: 5px; 
+	margin-top: -3px; 
+	margin-bottom: -3px; 
+	border-radius: 4px; 
+}
+</string>
+                 </property>
+                 <property name="maximum">
+                  <number>255</number>
+                 </property>
+                 <property name="value">
+                  <number>255</number>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLCDNumber" name="lcdNumberGreen">
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(0, 0, 0);</string>
+                 </property>
+                 <property name="segmentStyle">
+                  <enum>QLCDNumber::Flat</enum>
+                 </property>
+                 <property name="intValue" stdset="0">
+                  <number>255</number>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="90,10">
+               <item>
+                <widget class="QSlider" name="horizontalSlider_3">
+                 <property name="styleSheet">
+                  <string notr="true">QSlider::groove:horizontal { 
+	background-color: rgb(172, 172, 172);
+	height: 4px; 
+	border-radius: 2px;
+}
+
+QSlider::handle:horizontal { 
+	background-color: rgb(0, 0, 255); 
+	border: 2px solid rgb(0, 0, 255); 
+	width: 5px; 
+	height: 5px; 
+	margin-top: -3px; 
+	margin-bottom: -3px; 
+	border-radius: 4px; 
+}
+</string>
+                 </property>
+                 <property name="maximum">
+                  <number>255</number>
+                 </property>
+                 <property name="value">
+                  <number>0</number>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLCDNumber" name="lcdNumberBlue">
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(0, 0, 0);</string>
+                 </property>
+                 <property name="segmentStyle">
+                  <enum>QLCDNumber::Flat</enum>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>998</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNovo"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionNovo">
+   <property name="text">
+    <string>Novo</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>SelectedColors</class>
+   <extends>QWidget</extends>
+   <header>selectedcolors.h</header>
+   <container>1</container>
+   <slots>
+    <signal>emitSelectedColors(int,int,int)</signal>
+    <slot>setRed(int)</slot>
+    <slot>setBlue(int)</slot>
+    <slot>setGreen(int)</slot>
+   </slots>
+  </customwidget>
+  <customwidget>
+   <class>Plotter</class>
+   <extends>QWidget</extends>
+   <header>plotter.h</header>
+   <container>1</container>
+   <slots>
+    <signal>mudouY(int)</signal>
+    <signal>mudouX(int)</signal>
+    <signal>emitResetBlue(int)</signal>
+    <signal>emitResetRed(int)</signal>
+    <signal>emitResetGreen(int)</signal>
+    <signal>emitResetProfundidade(int)</signal>
+    <signal>emitCursorX(int)</signal>
+    <signal>emitCursorY(int)</signal>
+    <signal>emitCursorZ(int)</signal>
+    <slot>setAmplitude(int)</slot>
+    <slot>setFrequencia(int)</slot>
+    <slot>setVelocidade(int)</slot>
+    <slot>setColors(int,int,int)</slot>
+    <slot>setCoodenadaZ(int)</slot>
+    <slot>saveFigure()</slot>
+    <slot>setPutVoxel()</slot>
+    <slot>setCutVoxel()</slot>
+    <slot>setPutBox()</slot>
+    <slot>setCutBox()</slot>
+    <slot>setPutSphere()</slot>
+    <slot>setCutSphere()</slot>
+    <slot>setPutEllipsoid()</slot>
+    <slot>setCutEllipsoid()</slot>
+    <slot>setRaioEsfera(int)</slot>
+    <slot>setRaioXElipse(int)</slot>
+    <slot>setRaioYElipse(int)</slot>
+    <slot>setRaioZElipse(int)</slot>
+    <slot>setDimXCubo(int)</slot>
+    <slot>setDimYCubo(int)</slot>
+    <slot>setDimZCubo(int)</slot>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>horizontalSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>widget</receiver>
+   <slot>setRed(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>698</x>
+     <y>480</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>534</x>
+     <y>548</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_2</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>widget</receiver>
+   <slot>setGreen(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>698</x>
+     <y>511</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>534</x>
+     <y>548</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_3</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>widget</receiver>
+   <slot>setBlue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>698</x>
+     <y>542</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>534</x>
+     <y>548</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lcdNumberRed</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>698</x>
+     <y>480</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>768</x>
+     <y>484</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_2</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lcdNumberGreen</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>698</x>
+     <y>511</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>768</x>
+     <y>515</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_3</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lcdNumberBlue</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>698</x>
+     <y>542</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>768</x>
+     <y>546</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>widget</sender>
+   <signal>emitSelectedColors(int,int,int)</signal>
+   <receiver>containerMatriz</receiver>
+   <slot>setColors(int,int,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>534</x>
+     <y>548</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>425</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSliderProfundidade</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lcdNumberProfundidade</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>338</x>
+     <y>498</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>410</x>
+     <y>502</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSliderProfundidade</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>containerMatriz</receiver>
+   <slot>setCoodenadaZ(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>281</x>
+     <y>498</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>282</x>
+     <y>343</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>containerMatriz</receiver>
+   <slot>saveFigure()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>61</x>
+     <y>44</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>579</x>
+     <y>87</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSliderRXElipse</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lcdNumber_2</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>699</x>
+     <y>196</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>769</x>
+     <y>200</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSliderRYElipse</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lcdNumber_3</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>699</x>
+     <y>227</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>769</x>
+     <y>231</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSliderRZElipse</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lcdNumber_4</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>699</x>
+     <y>258</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>769</x>
+     <y>262</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSliderDXCubo</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lcdNumber_5</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>699</x>
+     <y>335</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>769</x>
+     <y>339</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSliderDYCubo</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lcdNumber_6</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>699</x>
+     <y>366</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>769</x>
+     <y>370</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSliderDZCubo</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lcdNumber_7</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>699</x>
+     <y>397</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>769</x>
+     <y>401</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonPutVoxel</sender>
+   <signal>clicked()</signal>
+   <receiver>containerMatriz</receiver>
+   <slot>setPutVoxel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>153</x>
+     <y>48</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>260</x>
+     <y>90</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonCutVoxel</sender>
+   <signal>clicked()</signal>
+   <receiver>containerMatriz</receiver>
+   <slot>setCutVoxel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>261</x>
+     <y>53</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>256</x>
+     <y>87</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonPutBox</sender>
+   <signal>clicked()</signal>
+   <receiver>containerMatriz</receiver>
+   <slot>setPutBox()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>347</x>
+     <y>53</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>334</x>
+     <y>92</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonCutBox</sender>
+   <signal>clicked()</signal>
+   <receiver>containerMatriz</receiver>
+   <slot>setCutBox()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>433</x>
+     <y>53</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>93</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonPutSphere</sender>
+   <signal>clicked()</signal>
+   <receiver>containerMatriz</receiver>
+   <slot>setPutSphere()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>519</x>
+     <y>53</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>485</x>
+     <y>89</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonCutSphere</sender>
+   <signal>clicked()</signal>
+   <receiver>containerMatriz</receiver>
+   <slot>setCutSphere()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>605</x>
+     <y>53</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>552</x>
+     <y>93</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonPutEllipsoid</sender>
+   <signal>clicked()</signal>
+   <receiver>containerMatriz</receiver>
+   <slot>setPutEllipsoid()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>692</x>
+     <y>53</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>593</x>
+     <y>148</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonCutEllipsoid</sender>
+   <signal>clicked()</signal>
+   <receiver>containerMatriz</receiver>
+   <slot>setCutEllipsoid()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>780</x>
+     <y>53</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>593</x>
+     <y>152</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSliderRXElipse</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>containerMatriz</receiver>
+   <slot>setRaioXElipse(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>699</x>
+     <y>196</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>593</x>
+     <y>223</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSliderRYElipse</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>containerMatriz</receiver>
+   <slot>setRaioYElipse(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>699</x>
+     <y>227</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>593</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSliderRZElipse</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>containerMatriz</receiver>
+   <slot>setRaioZElipse(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>699</x>
+     <y>258</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>593</x>
+     <y>330</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSliderDXCubo</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>containerMatriz</receiver>
+   <slot>setDimXCubo(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>699</x>
+     <y>335</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>593</x>
+     <y>386</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSliderDYCubo</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>containerMatriz</receiver>
+   <slot>setDimYCubo(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>699</x>
+     <y>366</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>593</x>
+     <y>394</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSliderDZCubo</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>containerMatriz</receiver>
+   <slot>setDimZCubo(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>699</x>
+     <y>397</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>593</x>
+     <y>412</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSliderRaioEsfera</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lcdNumber</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>699</x>
+     <y>119</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>769</x>
+     <y>123</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSliderRaioEsfera</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>containerMatriz</receiver>
+   <slot>setRaioEsfera(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>699</x>
+     <y>119</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>593</x>
+     <y>179</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>containerMatriz</sender>
+   <signal>emitResetBlue(int)</signal>
+   <receiver>widget</receiver>
+   <slot>setBlue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>593</x>
+     <y>412</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>534</x>
+     <y>548</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>containerMatriz</sender>
+   <signal>emitResetGreen(int)</signal>
+   <receiver>widget</receiver>
+   <slot>setGreen(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>593</x>
+     <y>412</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>534</x>
+     <y>548</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>containerMatriz</sender>
+   <signal>emitResetRed(int)</signal>
+   <receiver>widget</receiver>
+   <slot>setRed(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>593</x>
+     <y>412</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>534</x>
+     <y>548</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>containerMatriz</sender>
+   <signal>emitResetRed(int)</signal>
+   <receiver>horizontalSlider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>593</x>
+     <y>412</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>698</x>
+     <y>480</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>containerMatriz</sender>
+   <signal>emitResetGreen(int)</signal>
+   <receiver>horizontalSlider_2</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>593</x>
+     <y>412</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>698</x>
+     <y>511</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>containerMatriz</sender>
+   <signal>emitResetBlue(int)</signal>
+   <receiver>horizontalSlider_3</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>593</x>
+     <y>412</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>698</x>
+     <y>542</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>containerMatriz</sender>
+   <signal>emitResetProfundidade(int)</signal>
+   <receiver>horizontalSliderProfundidade</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>411</x>
+     <y>412</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>319</x>
+     <y>498</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>containerMatriz</sender>
+   <signal>emitCursorX(int)</signal>
+   <receiver>lcdNumberCursorX</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>177</x>
+     <y>241</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>136</x>
+     <y>250</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>containerMatriz</sender>
+   <signal>emitCursorY(int)</signal>
+   <receiver>lcdNumberCursorY</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>181</x>
+     <y>271</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>146</x>
+     <y>281</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>containerMatriz</sender>
+   <signal>emitCursorZ(int)</signal>
+   <receiver>lcdNumberCursorZ</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>190</x>
+     <y>318</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>151</x>
+     <y>315</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
